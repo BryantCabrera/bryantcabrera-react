@@ -613,3 +613,15 @@ main {
 .resume__content--item__list {
     padding-left: 1.5rem;
 }
+
+/****************************************/
+/********** ANIMATIONS **********/
+/****************************************/
+.example-appear {
+    opacity: 0.01;
+}
+  
+.example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}

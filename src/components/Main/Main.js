@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../../App.css';
 
 class Main extends Component {
     render() {
         return (
-            <main className="about route">
+            <ReactCSSTransitionGroup
+                component="main"
+                className="about route"
+                transitionName="example"
+                transitionAppear={true}
+                transitionAppearTimeout={500}
+                transitionEnter={false}
+                transitionLeave={false}>
+            {/* <main className="about route"> */}
                <h1 className="about__name">Bryant Cabrera</h1>
                 <p className="about__summary">
                     I’m a full stack software engineer who specializes in the MERN stack. My experience with Adobe and Apple design tools enriches my web development skills, redefining what it means to be a full stack developer.
@@ -74,7 +83,8 @@ class Main extends Component {
                         <li className="skills__list--item">Microsoft Office | Microsoft Word | Microsoft Excel | Microsoft PowerPoint | Microsoft Outlook | SalesForce</li>
                     </ul>
                 </div>
-            </main>
+            {/* </main> */}
+            </ReactCSSTransitionGroup>
         )
     }
 }
