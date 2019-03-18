@@ -178,7 +178,7 @@ header {
 .nav__about {
     position: absolute;
     top: 45%;
-    left: 0;
+    left: -1rem;
     -webkit-transform: rotate(270deg);
     -moz-transform: rotate(270deg);
     -o-transform: rotate(270deg);
@@ -186,10 +186,14 @@ header {
 
 .nav__projects {
     position: absolute;
+    left: 45%;
     bottom: 0;
 }
 
 .nav__resume {
+    position: absolute;
+    top: 45%;
+    right: -1.75rem;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
