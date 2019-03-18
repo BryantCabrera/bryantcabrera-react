@@ -22,7 +22,8 @@ class Project4 extends Component {
                     <li>•	Utilized BoardGameGeek API</li>
                     <li>•	Implemented Flask authorization</li>
                     <li>•	Connected react front-end to flask back-end</li>
-                    <li>•	Managed GitHub branches and merges</li>       
+                    <li>•	Managed GitHub branches and merges</li>    
+                    <li>•	Back-end GitHub Link: <a href="https://github.com/BryantCabrera/letsplay-flask" target="_blank" rel="noopener noreferrer" title="Let's Play Back-End GitHub">View Code</a></li>   
                 </ul>
                 <a href="https://letsplay-react.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project__link--deployed">Deployed Project</a>
                 <img src="/imgs/github.png" alt="GitHub" title="GitHub" className="project__link--github-icon"></img>
