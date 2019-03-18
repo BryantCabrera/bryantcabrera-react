@@ -100,6 +100,41 @@ body {
 }
 
 /****************************************/
+/********** REUSEABLE CONTENT **********/
+/****************************************/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+a:link,
+a:visited {
+    color: var(--color-primary-main);
+}
+
+.sub-header {
+    font-family: 'Montserrat', serif;
+}
+
+.btn {
+    font-family: 'Montserrat',sans-serif;
+}
+
+.icon {
+    height: 2rem;
+    width: auto;
+}
+
+.error {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/****************************************/
 /********** HEADER **********/
 /****************************************/
 header {
