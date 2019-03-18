@@ -9,7 +9,7 @@ class Main extends Component {
             <ReactCSSTransitionGroup
                 component="main"
                 className="about route"
-                transitionName="example"
+                transitionName="main"
                 transitionAppear={true}
                 transitionAppearTimeout={500}
                 transitionEnter={false}

@@ -617,11 +617,23 @@ main {
 /****************************************/
 /********** ANIMATIONS **********/
 /****************************************/
-.example-appear {
+.main-appear {
     opacity: 0.01;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
 }
   
-.example-appear.example-appear-active {
+.main-appear.main-appear-active {
     opacity: 1;
     transition: opacity .5s ease-in;
+}
+
+@-webkit-keyframes slide-right {
+    100% { left: 0; }
+}
+
+@keyframes slide-right {
+    100% { left: 0; }
 }
