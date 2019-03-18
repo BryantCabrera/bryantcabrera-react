@@ -6,6 +6,7 @@ class Header extends Component {
     render() {
         return (
             <header className="header">
+                This is Header.
                 {/* <NavLink exact to="/" className="header__logo--link">
                     <img className="header__logo" src="https://i.imgur.com/Y40XSUQ.png" alt="Bryant Cabrera Logo" title="Bryant Cabrera Logo"></img></NavLink>
                 <ul className="header__links">
