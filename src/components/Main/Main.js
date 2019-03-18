@@ -7,6 +7,7 @@ class Main extends Component {
     render() {
         return (
             <main className="about">
+                <Header />
                This is main.
             </main>
         )
