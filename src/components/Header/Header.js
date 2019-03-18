@@ -6,13 +6,15 @@ class Header extends Component {
     render() {
         return (
             <header className="header">
-                This is Header.
-                {/* <NavLink exact to="/" className="header__logo--link">
-                    <img className="header__logo" src="https://i.imgur.com/Y40XSUQ.png" alt="Bryant Cabrera Logo" title="Bryant Cabrera Logo"></img></NavLink>
-                <ul className="header__links">
-                    <li className="header__links--item"><a href="https://github.com/BryantCabrera/gameplay-react" target="_blank" rel="noopener noreferrer"><img className="header__links--item--github" src="/imgs/github.svg" alt="GitHub" title="GitHub"></img></a></li>
-                    <li className="header__links--item"><a href="https://www.linkedin.com/in/bryantcabrera/" target="_blank" rel="noopener noreferrer"><img className="header__links--item--linkedin" src="/imgs/linkedin.png" alt="LinkedIn" title="LinkedIn"></img></a></li>
-                </ul> */}
+                <NavLink exact to="/" className="logo--link">
+                    <img src="./imgs/bryantcabrera_logo.svg" alt="Bryant Cabrera's Logo" title="Bryant Cabrera's Logo" className="logo--img"></img>
+                </NavLink>
+                <ul className="navbar__list">
+                    <li className="navbar__list--item"><a className="navbar__list--link" href="#about">About</a></li>
+                    <li className="navbar__list--item"><a className="navbar__list--link"  href="#projects">Projects</a></li>
+                    <li className="navbar__list--item"><a className="navbar__list--link"  href="#resume">Resume</a></li>
+                    <li className="navbar__list--item"><a className="navbar__list--link"  href="#contact">Contact</a></li>
+                </ul>
             </header>
         )
     }
