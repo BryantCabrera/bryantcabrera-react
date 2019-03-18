@@ -7,7 +7,7 @@ class Header extends Component {
         return (
             <header className="header">
                 <NavLink exact to="/" className="logo--link">
-                    <img src="./imgs/bryantcabrera_logo.svg" alt="Bryant Cabrera's Logo" title="Bryant Cabrera's Logo" className="logo--img"></img>
+                    <img src="/imgs/bryantcabrera_logo.svg" alt="Bryant Cabrera's Logo" title="Bryant Cabrera's Logo" className="logo--img"></img>
                 </NavLink>
                 <ul className="contact__list">
                     <li className="contact__list--item"><a className="contact__list--link" href="#about">About</a></li>

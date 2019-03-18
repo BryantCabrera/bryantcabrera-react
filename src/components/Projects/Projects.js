@@ -16,9 +16,16 @@ class Projects extends Component {
         ]
     }
 
-    componentDidMount () {
-        // this.props.updateProjectsLink()
-    }
+    // componentDidMount () {
+    //     const projectsNav = [
+    //         <NavLink exact to="/games/settlersofcatan" className="project__link">Settlers of Catan</NavLink>,
+    //         <NavLink exact to="/games/gameplay" className="project__link">GamePlay</NavLink>,
+    //         <NavLink exact to="/games/relocater" className="project__link">Relocater</NavLink>,
+    //         <NavLink exact to="/games/letsplay" className="project__link">Let's Play</NavLink>,
+    //         <NavLink exact to="/games/tutorme" className="project__link">Tutor Me</NavLink>,
+    //     ];
+    //     // this.props.updateProjectsLink(projectsNav);
+    // }
 
     render() {
         return (
