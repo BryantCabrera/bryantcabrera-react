@@ -166,6 +166,11 @@ header {
     list-style: none;
 }
 
+.contact__list__email {
+    justify-self: center;
+    align-self: center;
+}
+
 .contact__list--item {
     padding: 0 1.5rem;
 }
@@ -199,6 +204,10 @@ header {
 
 .contact__list--link::before:hover {
     background: var(--color-secondary-light); 
+}
+
+.contact__list--img {
+    height: 3.75rem;
 }
 
 /****************************************/
