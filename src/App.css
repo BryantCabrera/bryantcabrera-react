@@ -239,6 +239,7 @@ header {
 
 .route {
     height: calc(100% - 1.5vw);
+    height: 90%;
     width: 90%;
     overflow: scroll;
 }
@@ -430,4 +431,171 @@ main {
 .project__link--code::before:hover,
 .project__link--deployed::before:hover, {
     background: var(--color-secondary-light); 
+}
+
+/****************************************/
+/********** RESUME **********/
+/****************************************/
+.resume--component h2 {
+    margin-bottom: 1rem;
+}
+
+#resume {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.resume {
+    width: 90%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 2.6rem 10rem 3.5rem 85rem 14rem 5rem 12.5rem;
+    grid-template-areas: "about about"
+                         "profile--title profile"
+                         "education--title education"
+                         "experience--title experience"
+                         "extracurriculars--title extracurriculars"
+                         "publications--title publications"
+                         "soft-skills--title soft-skills";
+    border: .1rem solid var(--color-primary-main);
+    border-radius: var(--border-radius-main);
+    text-align: left;
+    overflow: hidden;
+}
+
+.resume__title {
+    text-align: right;
+    font-size: 1rem;
+    padding-right: .2rem;
+    background-color: rgba(35, 35, 35, .6);
+    color: var(--color-bg);
+    font-weight: 700;
+    /* transform: rotate(270deg); */
+}
+
+.resume__content {
+    font-size: 1.2rem;
+    padding-left: .3rem;
+}
+
+.resume__date {
+    text-align: right;
+}
+
+.resume__about {
+    grid-area: about;
+    text-align: center;
+    width: 100%;
+    background-color: var(--color-primary-main);
+    font-size: 2rem;
+    color: var(--color-bg);
+}
+
+.resume__profile {
+    grid-area: profile;
+    border-bottom: .1rem solid var(--color-primary-main);
+    list-style: none;
+}
+
+.resume__profile--title {
+    grid-area: profile--title;
+    border-right: .1rem solid var(--color-primary-main);
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__education {
+    grid-area: education;
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__education--title {
+    grid-area: education--title;
+    border-right: .1rem solid var(--color-primary-main);
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__experience {
+    grid-area: experience;
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__experience--title {
+    grid-area: experience--title;
+    border-right: .1rem solid var(--color-primary-main);
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__extracurriculars {
+    grid-area: extracurriculars;
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__extracurriculars--title {
+    grid-area: extracurriculars--title;
+    border-right: .1rem solid var(--color-primary-main);
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__publications {
+    grid-area: publications;
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__publications--title {
+    grid-area: publications--title;
+    border-right: .1rem solid var(--color-primary-main);
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__soft-skills {
+    grid-area: soft-skills;
+    border-bottom: .1rem solid var(--color-primary-main);
+    list-style: none;
+}
+
+.resume__soft-skills--title {
+    grid-area: soft-skills--title;
+    border-right: .1rem solid var(--color-primary-main);
+    border-bottom: .1rem solid var(--color-primary-main);
+}
+
+.resume__content--item {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.resume__content--item__header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "title date";
+    padding-right: .2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.resume__content--item__title {
+    grid-area: title;
+}
+
+.resume__content--item__date {
+    grid-area: date;
+    text-align: right;
+    /* padding-right: .2rem; */
+}
+
+.resume__content--item__position {
+    font-size: 1rem;
+}
+
+.resume__content--item__description {
+    font-style: italic;
+}
+
+.resume__content--item__list {
+    padding-left: 1.5rem;
 }

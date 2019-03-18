@@ -7,6 +7,7 @@ import Project2 from '../Projects/Project2';
 import Project3 from '../Projects/Project3';
 import Project4 from '../Projects/Project4';
 import Project5 from '../Projects/Project5';
+import Resume from '../Resume/Resume';
 import '../../App.css';
 
 class Nav extends Component {
@@ -30,7 +31,7 @@ class Nav extends Component {
                     ))} */}
                     Projects: <NavLink exact to="/projects/settlersofcatan" className="project__link">Settlers of Catan</NavLink> | <NavLink exact to="/projects/gameplay" className="project__link">GamePlay</NavLink> | <NavLink exact to="/projects/relocater" className="project__link">Relocater</NavLink> | <NavLink exact to="/projects/letsplay" className="project__link">Let's Play</NavLink> | <NavLink exact to="/projects/tutorme" className="project__link">Tutor Me</NavLink>
                 </div>
-                <NavLink exact to="/" className="nav__resume">Resume</NavLink>
+                <NavLink exact to="/resume" className="nav__resume">Resume</NavLink>
                 <Switch>
                     <Route
                         exact
@@ -92,6 +93,15 @@ class Nav extends Component {
                         path="/projects/tutorme"
                         component={() => (
                             <Project2
+                                history={this.props.history}
+                            />
+                        )}
+                    />
+                    <Route
+                        exact
+                        path="/resume"
+                        component={() => (
+                            <Resume
                                 history={this.props.history}
                             />
                         )}

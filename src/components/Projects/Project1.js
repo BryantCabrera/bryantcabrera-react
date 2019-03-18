@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import '../../App.css';
 
-class Project5 extends Component {
+class Project1 extends Component {
     state = {
         projects: [
             {
@@ -29,4 +29,4 @@ class Project5 extends Component {
     }
 }
 
-export default withRouter(Project5);
+export default withRouter(Project1);
