@@ -36,6 +36,7 @@ class Nav extends Component {
                         component={() => (
                             <Projects
                                 history={this.props.history}
+                                updateProjectsLink={this.updateProjectsLink}
                             />
                         )}
                     />

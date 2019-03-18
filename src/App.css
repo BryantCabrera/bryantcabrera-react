@@ -373,6 +373,7 @@ main {
     padding-left: .3rem;
     font-size: 1.4rem;
     border-bottom: .1rem solid var(--color-primary-main);
+    list-style: none;
 }
 
 .project__link--deployed {
