@@ -5,11 +5,20 @@ import Projects from '../Projects/Projects';
 import '../../App.css';
 
 class Nav extends Component {
+    state = {
+        projectsLink: <NavLink exact to="/projects" className="nav__projects">Projects</NavLink>
+    }
+
+    updateProjectsLink = (link) => {
+        this.setState({
+            projectsLink: link
+        });
+    }
+
     render() {
         return (
             <nav className="nav">
-                <NavLink exact to="/" className="nav__about">About</NavLink>
-                <NavLink exact to="/projects" className="nav__projects">Projects</NavLink>
+                <NavLink exact to="/" className="nav__about">About</NavLink>{this.state.projectsLink}
                 <NavLink exact to="/" className="nav__resume">Resume</NavLink>
                 <Switch>
                     <Route
