@@ -208,6 +208,9 @@ header {
     position: relative;
     height: calc(100% - 4rem);
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__about {
@@ -232,4 +235,77 @@ header {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
+}
+
+.route {
+    height: calc(100% - 1.5vw);
+    width: 90%;
+    overflow: scroll;
+}
+
+/****************************************/
+/********** MAIN **********/
+/****************************************/
+main {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: left;
+}
+
+.about__name {
+    width: 100%;
+    font-size: 4rem;
+}
+
+.about__summary {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+/****************************************/
+/********** SKILLS **********/
+/****************************************/
+.skills {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.skill {
+    flex-basis: 14%;
+    display: grid;
+    grid-template-columns: 5rem;
+    grid-template-rows: 5rem 1.5rem;
+    grid-template-areas: "img"
+                         "text";
+}
+
+.skill__img {
+    grid-area: img;
+    display: flex;
+    place-items: center;
+    height: 5rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.skill__text {
+    grid-area: text;
+    justify-self: center;
+    align-self: center;
+    font-size: 1rem;
+}
+
+.skills__list {
+    display: flex;
+    flex-flow: column wrap;
+    place-items: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.skills__list--item {
+    text-align: center;
 }
