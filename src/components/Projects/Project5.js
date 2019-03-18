@@ -14,12 +14,12 @@ class Project5 extends Component {
     render() {
         return (      
             <div className="project2 project__card">
-                <h3 className="project__title">Tutor Me</h3>
-                <a href="https://github.com/BryantCabrera/tutor-me" target="_blank" rel="noopener noreferrer" className="project__img--link"><img src="/imgs/tutor-me.png" alt="Tutor Me Project" title="Tutor Me Project" className="project__img"></img></a>
+                <h3 className="project__title">GamePlay</h3>
+                <a href="https://github.com/BryantCabrera/gameplay-react" target="_blank" rel="noopener noreferrer" className="project__img--link"><img src="/imgs/tutor-me.png" alt="GamePlay Project" title="GamePlay Project" className="project__img"></img></a>
                 <ul className="project__description">
-                    <li>•	MEN Stack app that connects tutors and students</li>
-                    <li>•	Tech: Node, Express, MongoDB, Mongoose, authentication with bcrypt, Google API, Sass, BEM, jQuery, Adobe XD</li>
-                    <li>•	Utilized Google Maps API and Geocoder API to connect clients by zip code proximity</li>
+                    <li>•	MERN Stack game hub app that tracks player stats from iFrame-embedded web socket games.</li>
+                    <li>•	Tech: React, CSS, Node, Express, MongoDB, Mongoose, authentication with bcrypt, BEM, web sockets, iFrame, Adobe XD</li>
+                    <li>•	Created web socket games, embedded them in iFrames in GamePlay hub app, and coded communication methods between them.</li>
                 </ul>
                 <a href="https://bryant-tutor-me.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project__link--deployed">Deployed Project</a>
                 <img src="/imgs/github.png" alt="GitHub" title="GitHub" className="project__link--github-icon"></img>

@@ -340,7 +340,7 @@ main {
     width: 90%;
     display: grid;
     grid-template-columns: 60% 22.5% 5% 12.5%;
-    grid-template-rows: 2.2rem 18.5rem 2.7rem;
+    grid-template-rows: 2.2rem 30rem 2.7rem;
     grid-template-areas: "title title title title"
                          "img des des des"
                          "img deployed github code";
@@ -381,9 +381,14 @@ main {
 .project__description {
     grid-area: des;
     padding-left: .3rem;
-    font-size: 1.4rem;
     border-bottom: .1rem solid var(--color-primary-main);
     list-style: none;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.project__description li {
+    margin-bottom: 1.5rem;
 }
 
 .project__link--deployed {
