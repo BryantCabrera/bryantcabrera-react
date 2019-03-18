@@ -182,30 +182,6 @@ header {
     font-weight: 700;
 }
 
-.contact__list--link:link,
-.contact__list--link:visited {
-    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-primary-main) 50%);
-    background-size: 250%;
-    color: var(--color-primary-main);
-    transition: all .4s;
-}
-
-.contact__list--link:hover,
-.contact__list--link:active {
-    background-position: 100%;
-    color: var(--color-bg);
-}
-
-.contact__list--link::before {
-    position: absolute;
-    content: "     ";
-    transition: all .2s;
-}
-
-.contact__list--link::before:hover {
-    background: var(--color-secondary-light); 
-}
-
 .contact__list--img {
     height: 3.75rem;
 }
@@ -251,6 +227,30 @@ header {
     height: 90%;
     width: 90%;
     overflow: scroll;
+}
+
+.nav__link:link,
+.nav__link:visited {
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, var(--color-primary-main) 50%);
+    background-size: 250%;
+    color: var(--color-primary-main);
+    transition: all .4s;
+}
+
+.nav__link:hover,
+.nav__link:active {
+    background-position: 100%;
+    color: var(--color-bg);
+}
+
+.nav__link::before {
+    position: absolute;
+    content: "     ";
+    transition: all .2s;
+}
+
+.nav__link::before:hover {
+    background: var(--color-secondary-light); 
 }
 
 /****************************************/
