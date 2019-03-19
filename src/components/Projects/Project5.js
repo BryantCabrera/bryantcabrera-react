@@ -29,7 +29,7 @@ class Project5 extends Component {
                         <li>•	MERN Stack game hub app that tracks player stats from iFrame-embedded web socket games.</li>
                         <li>•	Tech: React, CSS, Node, Express, MongoDB, Mongoose, authentication with bcrypt, BEM, web sockets, iFrame, Adobe XD</li>
                         <li>•	Created web socket games, embedded them in iFrames in GamePlay hub app, and coded communication methods between them.</li>
-                        <li>•	Back-end GitHub Link: <a href="https://github.com/BryantCabrera/gameplay-server" target="_blank" rel="noopener noreferrer" title="GamePlay Back-End GitHub">View Code</a></li>
+                        <li>•	Back-end GitHub Link: <a href="https://github.com/BryantCabrera/gameplay-express" target="_blank" rel="noopener noreferrer" title="GamePlay Back-End GitHub">View Code</a></li>
                     </ul>
                     <a href="https://bryant-gameplay.herokuapp.com" target="_blank" rel="noopener noreferrer" className="project__link--deployed">Deployed Project</a>
                     <img src="/imgs/github.png" alt="GitHub" title="GitHub" className="project__link--github-icon"></img>

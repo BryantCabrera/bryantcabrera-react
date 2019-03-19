@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter, NavLink } from 'react-router-dom';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../../App.css';
 
 class Header extends Component {
@@ -21,9 +22,18 @@ class Header extends Component {
                     <img src="/imgs/bryantcabrera_logo.svg" alt="Bryant Cabrera's Logo" title="Bryant Cabrera's Logo" className="logo--img"></img>
                 </NavLink>
                 <ul className="contact__list">
-                    <li className="contact__list--item">
-                        <span className="contact__list__email">{this.state.email}</span>
-                    </li>
+                    {/* <ReactCSSTransitionGroup
+                        component="li"
+                        className="contact__list--item"
+                        transitionName="email"
+                        transitionAppear={true}
+                        transitionAppearTimeout={500}
+                        transitionEnter={false}
+                        transitionLeave={false}> */}
+                        <li className="contact__list--item">
+                            <span className="contact__list__email">{this.state.email}</span>
+                        </li>
+                    {/* </ReactCSSTransitionGroup> */}
                     <li className="contact__list--item">
                         <a className="contact__list--link" href="#about" onClick={this.toggleEmail}>
                             <img className="contact__list--img" src="/imgs/gmail.png" alt="Bryant's Email" title="Bryant's Email"></img>

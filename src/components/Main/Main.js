@@ -13,7 +13,8 @@ class Main extends Component {
                 transitionAppear={true}
                 transitionAppearTimeout={500}
                 transitionEnter={false}
-                transitionLeave={false}>
+                transitionLeave={true}
+                transitionLeaveTimeout={300}>
             {/* <main className="about route"> */}
                <h1 className="about__name">Bryant Cabrera</h1>
                 <p className="about__summary">

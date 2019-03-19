@@ -36,7 +36,7 @@ class Project4 extends Component {
                     </ul>
                     <a href="https://letsplay-react.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="project__link--deployed">Deployed Project</a>
                     <img src="/imgs/github.png" alt="GitHub" title="GitHub" className="project__link--github-icon"></img>
-                    <a href="https://github.com/BryantCabrera/letsplay-flask" target="_blank" rel="noopener noreferrer" className="project__link--code">View Code</a>
+                    <a href="https://github.com/BryantCabrera/letsplay-react" target="_blank" rel="noopener noreferrer" className="project__link--code">View Code</a>
                 </div>
             </ReactCSSTransitionGroup> 
         )
