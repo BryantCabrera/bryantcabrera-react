@@ -19,7 +19,7 @@ class Main extends Component {
                 <p className="about__summary">
                     I’m a full stack software engineer who specializes in the MERN stack. My experience with Adobe and Apple design tools enriches my web development skills, redefining what it means to be a full stack developer.
                 </p>
-                <h2>Skills</h2>
+                <h2 className="skills__title">Skills</h2>
                 <div className="skills">
                     <div className="html skill">
                         <img src="/imgs/html5.png" alt="HTML5" title="HTML5" className="skill__img"></img>

@@ -29,7 +29,7 @@ class Nav extends Component {
                     {/* {this.state.projectsLink.map((project, index) => (
                         project
                     ))} */}
-                    Projects: <NavLink exact to="/projects/settlersofcatan" className="project__link nav__link">Settlers of Catan</NavLink> | <NavLink exact to="/projects/gameplay" className="project__link nav__link">GamePlay</NavLink> | <NavLink exact to="/projects/relocater" className="project__link nav__link">Relocater</NavLink> | <NavLink exact to="/projects/letsplay" className="project__link nav__link">Let's Play</NavLink> | <NavLink exact to="/projects/tutorme" className="project__link nav__link">Tutor Me</NavLink>
+                    Projects: <NavLink exact to="/projects/gameplay" className="project__link nav__link">GamePlay</NavLink> | <NavLink exact to="/projects/settlersofcatan" className="project__link nav__link">Settlers of Catan</NavLink> | <NavLink exact to="/projects/relocater" className="project__link nav__link">Relocater</NavLink> | <NavLink exact to="/projects/letsplay" className="project__link nav__link">Let's Play</NavLink> | <NavLink exact to="/projects/tutorme" className="project__link nav__link">Tutor Me</NavLink>
                 </div>
                 <NavLink exact to="/resume" className="nav__resume nav__link">Resume</NavLink>
                 <Switch>

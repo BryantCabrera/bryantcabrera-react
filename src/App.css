@@ -209,7 +209,6 @@ header {
 
 .nav__projects {
     position: absolute;
-    left: 17.5%;
     bottom: 0;
 }
 
@@ -276,6 +275,11 @@ main {
 /****************************************/
 /********** SKILLS **********/
 /****************************************/
+.skills__title {
+    width: 100%;
+    text-align: center;
+}
+
 .skills {
     display: flex;
     flex-flow: row wrap;
@@ -340,7 +344,7 @@ main {
     width: 90%;
     display: grid;
     grid-template-columns: 60% 22.5% 5% 12.5%;
-    grid-template-rows: 2.2rem 30rem 2.7rem;
+    grid-template-rows: 3rem 30rem 2.7rem;
     grid-template-areas: "title title title title"
                          "img des des des"
                          "img deployed github code";
@@ -352,6 +356,9 @@ main {
 
 .project__title {
     grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-primary-main);
     font-size: 2rem;
     color: var(--color-bg);
@@ -466,7 +473,7 @@ main {
     align-self: center;
     display: grid;
     grid-template-columns: 15% 1fr;
-    grid-template-rows: 2.6rem 10rem 3.5rem 85rem 14rem 5rem 12.5rem;
+    grid-template-rows: 2.6rem 6.5rem 7rem 85rem 14rem 5rem 12.5rem;
     grid-template-areas: "about about"
                          "profile--title profile"
                          "education--title education"
@@ -482,7 +489,7 @@ main {
 
 .resume__title {
     text-align: right;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-right: .2rem;
     background-color: rgba(35, 35, 35, .6);
     color: var(--color-bg);
@@ -497,6 +504,7 @@ main {
 
 .resume__date {
     text-align: right;
+    font-weight: 700;
 }
 
 .resume__about {
@@ -577,7 +585,7 @@ main {
 }
 
 .resume__content--item {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -588,7 +596,7 @@ main {
     grid-template-rows: 1fr;
     grid-template-areas: "title date";
     padding-right: .2rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -603,11 +611,16 @@ main {
 }
 
 .resume__content--item__position {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .resume__content--item__description {
+    font-size: 1.2rem;
     font-style: italic;
+}
+
+.resume__content--item__description a {
+    font-size: 1.2rem;
 }
 
 .resume__content--item__list {
@@ -619,15 +632,28 @@ main {
 /****************************************/
 .main-appear {
     opacity: 0.01;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
 }
   
 .main-appear.main-appear-active {
     opacity: 1;
-    transition: opacity .5s ease-in;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: all .5s ease-in;
+}
+
+.resume-appear {
+    opacity: 0.01;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+  
+.resume-appear.resume-appear-active {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: all .5s ease-in;
 }
 
 @-webkit-keyframes slide-right {
@@ -637,3 +663,18 @@ main {
 @keyframes slide-right {
     100% { left: 0; }
 }
+
+@keyframes horizontal {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+    50% {
+      -webkit-transform: scaleY(10);
+              transform: scaleY(10);
+    }
+    100% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+    }
+  }

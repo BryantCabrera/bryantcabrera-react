@@ -17,8 +17,8 @@ class Project4 extends Component {
                 <h3 className="project__title">Let's Play</h3>
                 <a href="https://github.com/BryantCabrera/letsplay-react" target="_blank" rel="noopener noreferrer" className="project__img--link"><img src="/imgs/letsplay.png" alt="Let's Play Project" title="Let's Play Project" className="project__img"></img></a>
                 <ul className="project__description">
-                    <li>•	Full-Stack app that provides boardgame data</li>
-                    <li>•	Tech: React, CSS, BEM, Flask, SQLite, PostgreSQL, and Flask-Login.</li>
+                    <li>•	Full-Stack app group project  that provides boardgame data and curation</li>
+                    <li>•	Tech: React, CSS, BEM, Flask, SQLite, PostgreSQL, and Flask-Login</li>
                     <li>•	Utilized BoardGameGeek API</li>
                     <li>•	Implemented Flask authorization</li>
                     <li>•	Connected react front-end to flask back-end</li>

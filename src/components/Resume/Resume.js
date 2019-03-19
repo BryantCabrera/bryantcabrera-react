@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import '../../App.css';
 
 class Resume extends Component {
     render() {
         return (
-            <div className="resume--component route">
+            <ReactCSSTransitionGroup
+                component="div"
+                className="resume--component route"
+                transitionName="resume"
+                transitionAppear={true}
+                transitionAppearTimeout={500}
+                transitionEnter={false}
+                transitionLeave={false}>
+            {/* <div className="resume--component route"> */}
                 <h2>Resume</h2>
                 <section id="resume">
                     <div className="resume">
@@ -25,13 +34,25 @@ class Resume extends Component {
                             Education
                         </div>
                         <div className="resume__education resume__content">
-                            Stanford University, Bachelor of Arts, Human Biology <span className="resume__date">2012</span><br/>
-                            Specialized in nutrition, biochemical functions, and human anatomy.   
+                            <strong>Stanford University</strong>, Bachelor of Arts, Human Biology <span className="resume__date">2012</span><br/>
+                            Specialized in nutrition, biochemical functions, and human anatomy. <br/><br/>
+                            <strong>General Assembly</strong>, Bachelor of Arts, Human Biology <span className="resume__date">2019</span><br/>
+                            Completed over 1,200 hours of full stack web development immersive that specialized in the MERN stack.   
                         </div>
                         <div className="resume__experience--title resume__title">
                             Experience
                         </div>
                         <div className="resume__experience resume__content">
+                            <div className="resume__content--item">
+                                <div className="resume__content--item__header"><span className="resume__content--item__title">Straight Up Keto, Los Angeles, CA</span><span className="resume__content--item__date">02/19 – present</span></div>
+                                <span className="resume__content--item__position">Full Stack Software Engineer</span><br/>
+                                <span className="resume__content--item__description">Health start-up. <a href="https://www.straightupketo.com/macro-calculator" target="_blank" rel="noopener noreferrer">https://www.straightupketo.com/macro-calculator</a></span><br/>
+                                <ul className="resume__content--item__list">
+                                    <li>
+                                        Created Keto macro calculator using HTML, CSS, JavaScript, and jQuery.
+                                    </li>
+                                </ul>
+                            </div>
                             <div className="resume__content--item">
                                 <div className="resume__content--item__header"><span className="resume__content--item__title">Bryant’s Tutoring, Los Angeles, CA</span><span className="resume__content--item__date">06/12 – present</span></div>
                                 <span className="resume__content--item__position">Founder, Private Tutor</span><br/>
@@ -186,7 +207,8 @@ class Resume extends Component {
                         </ul>
                     </div> 
                 </section>
-            </div>
+            {/* </div> */}
+            </ReactCSSTransitionGroup>
         )
     }
 }

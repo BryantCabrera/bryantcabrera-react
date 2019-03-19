@@ -21,7 +21,7 @@ class Project1 extends Component {
                     <li>•	Tech: jQuery, clip paths, & CSS Grid to construct interactable boardgame area</li>
                     <li>•	Data structures comprised of nested objects and arrays, connecting data with referencing</li>    
                 </ul>
-                <a href="https://bryantcabrera.github.io/Settlers-of-Catan/#" target="_blank" rel="noopener noreferrer" className="project__link--deployed">Deployed Project</a>
+                <a href="https://bryantcabrera.github.io/Settlers-of-Catan" target="_blank" rel="noopener noreferrer" className="project__link--deployed">Deployed Project</a>
                 <img src="/imgs/github.png" alt="GitHub" title="GitHub" className="project__link--github-icon"></img>
                 <a href="https://github.com/BryantCabrera/Settlers-of-Catan" target="_blank" rel="noopener noreferrer" className="project__link--code">View Code</a>
             </div>
