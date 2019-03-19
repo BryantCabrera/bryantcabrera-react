@@ -340,6 +340,11 @@ main {
     margin-bottom: 1rem;
 }
 
+.project__card--container {
+    display: flex;
+    justify-content: center;
+}
+
 .project__card {
     width: 90%;
     display: grid;
@@ -653,6 +658,19 @@ main {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    transition: all .5s ease-in;
+}
+
+.project-appear {
+    opacity: 0.01;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+  
+.project-appear.project-appear-active {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     transition: all .5s ease-in;
 }
 
