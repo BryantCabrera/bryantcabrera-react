@@ -39,7 +39,7 @@ class Main extends Component {
                         <p className="skill__text">jQuery</p>
                     </div>
                     <div className="mongodb skill">
-                        <img src="/imgs/mongodb.png" alt="MongoDB" title="MongoDB" className="skill__img"></img>
+                        <img src="/imgs/mongoDB.png" alt="MongoDB" title="MongoDB" className="skill__img"></img>
                         <p className="skill__text">MongoDB</p>
                     </div>
                     <div className="mongoose skill">

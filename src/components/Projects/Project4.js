@@ -29,7 +29,7 @@ class Project4 extends Component {
                         <li>•	Full-Stack app group project  that provides boardgame data and curation</li>
                         <li>•	Tech: React, CSS, BEM, Flask, SQLite, PostgreSQL, and Flask-Login</li>
                         <li>•	Utilized BoardGameGeek API</li>
-                        <li>•	Implemented Flask authorization</li>
+                        <li>•	Implemented Flask authentication</li>
                         <li>•	Connected react front-end to flask back-end</li>
                         <li>•	Managed GitHub branches and merges</li>    
                         <li>•	Back-end GitHub Link: <a href="https://github.com/BryantCabrera/letsplay-flask" target="_blank" rel="noopener noreferrer" title="Let's Play Back-End GitHub">View Code</a></li>   
