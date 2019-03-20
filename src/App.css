@@ -499,12 +499,14 @@ main {
     background-color: rgba(35, 35, 35, .6);
     color: var(--color-bg);
     font-weight: 700;
+    overflow-wrap: break-word;
     /* transform: rotate(270deg); */
 }
 
 .resume__content {
     font-size: 1.2rem;
     padding-left: .3rem;
+    overflow: scroll;
 }
 
 .resume__date {
